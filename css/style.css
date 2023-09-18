@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.fondoinicio {
+    justify-content: center;
+    background-color: #abc2ec;
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+a {
+    text-decoration:none;
+}
+.clase1 {
+    text-decoration: solid;
+}
+.header{
+    background-color: rgb(99, 129, 228);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.menuprincipal  {
+list-style: none;
+display: flex;
+justify-content: center;
+gap: 15px;
+position: sticky;
+}
+.menuinterno li{
+    display: table;
+    margin-left: auto;
+}
+.subir {
+    display: table;
+    margin-left: auto;
+}
+.textoss {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    margin-bottom: 10px
+}
+.textoprincipal {
+    display: table;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+.menufooter li{
+    display: inline;
+    margin-right: auto;
+    text-decoration: none; 
+}
+.footercolor {
+    background-color: rgba(21, 47, 73, 0.836);
+}
+p {
+    justify-content: center;
+}
+
+.subir {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    right: 15px;
+}
+img {
+    max-width: 100%;
+}
+.enlaces{
+    color: rgb(8, 7, 10);
+}
