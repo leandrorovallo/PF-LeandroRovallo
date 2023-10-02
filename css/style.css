@@ -1,81 +1,167 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-body{
-    font-family: 'Roboto', sans-serif;
+
+body {
+  font-family: "Roboto", sans-serif;
 }
+
 .fondoinicio {
-    justify-content: center;
-    background-color: #abc2ec;
+  justify-content: center;
+  background-color: #e6e9f0;
 }
+
 .logo {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
-a {
-    text-decoration:none;
+
+li {
+  text-decoration: none;
 }
+li a:hover {
+  color: beige;
+}
+
 .clase1 {
-    text-decoration: solid;
+  text-decoration: solid;
 }
-.header{
-    background-color: rgb(99, 129, 228);
-    padding: 18px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+
+.header {
+  background-color: rgb(99, 129, 228);
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
-.menuprincipal  {
-list-style: none;
-display: flex;
-justify-content: center;
-gap: 15px;
-position: sticky;
-}
-.menuinterno li{
-    display: table;
-    margin-left: auto;
-}
-.subir {
-    display: table;
-    margin-left: auto;
-}
-.textoss {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: auto;
-    margin-bottom: 10px
-}
-.textoprincipal {
-    display: table;
-    margin-top: auto;
-    margin-right: auto;
-    margin-left: auto;
-}
-.menufooter li{
-    display: inline;
-    margin-right: auto;
-    text-decoration: none; 
-}
-.footercolor {
-    background-color: rgba(21, 47, 73, 0.836);
-}
-p {
-    justify-content: center;
+
+.menuprincipal {
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  gap: 2%;
+  position: sticky;
+  padding: 3%;
+  text-decoration: none;
 }
 
 .subir {
-    width: 40px;
-    position: fixed;
-    bottom: 0px;
-    right: 15px;
+  display: table;
+  margin-bottom: 15px;
+  padding: 1%;
 }
+
+.textoss {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.textoprincipal {
+  display: table;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.menufooter ul li {
+  display: inline;
+  text-decoration: none;
+  list-style: none;
+  justify-content: center;
+  padding: 3%;
+}
+.menufooter ul li:hover {
+  color: aliceblue;
+}
+
+.footercolor {
+  background-color: rgba(21, 47, 73, 0.836);
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+.subir {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  right: 15px;
+}
+
+.fotos1 {
+  width: 75%;
+  margin: auto;
+}
+
 img {
+  max-width: 100%;
+  min-width: 30px;
+}
+
+@media screen and (min-width: 180px) {
+  .fotos1 {
+    width: 100%;
+    margin: auto;
+  }
+  img {
     max-width: 100%;
+  }
 }
-.enlaces{
-    color: rgb(8, 7, 10);
+@media screen and (min-width: 450px) {
+  .fotos1 {
+    width: 90%;
+    margin: auto;
+  }
+  img {
+    max-width: 80%;
+  }
 }
+@media screen and (min-width: 600px) {
+  .fotos1 {
+    width: 75%;
+    margin: auto;
+  }
+  img {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 3000px) {
+  .fotos1 {
+    width: 60%;
+    margin: auto;
+  }
+  img {
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .fotos1 {
+    width: 70%;
+    margin: auto;
+  }
+  img {
+    max-width: 70%;
+  }
+}
+.enlaces {
+  color: rgb(8, 7, 10);
+}
+
+.menuhamburguesa {
+  background-color: rgb(99, 129, 228);
+}
+
+.beneficios {
+  margin-top: 3px;
+  justify-content: center;
+  padding: 1%;
+}
+
+/*# sourceMappingURL=style.css.map */
