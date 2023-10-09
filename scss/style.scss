@@ -1,33 +1,35 @@
+@import "variables";
+@import "bucles";
+@import "animaciones";
+
+
+
+$color-primario: rgb(32, 33, 34);
+$color-secundario: rgba(41, 42, 43, 0.836);
+$color-terciario: #e6e9f0;
+$color-enlaces:  rgb(109, 106, 116);
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 body{
     font-family: 'Roboto', sans-serif;
 }
 .fondoinicio {
     justify-content: center;
-    background-color: #e6e9f0;
+    background-color: $color-terciario;
 }
 .logo {
     display: block;
     margin: 0 auto;
-}
-li  {
-    list-style: none;
-    text-decoration:none;
+    
 }
 
 .clase1 {
     text-decoration: solid;
 }
-.header{
-    background-color: rgb(99, 129, 228);
-    padding: 18px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
+
+
 .menuprincipal  {
 list-style: none;
 display: inline-flex;
@@ -39,11 +41,14 @@ text-decoration: none;
 }
 
 .subir {
-    display: table;
-    margin-bottom: 15px ;
+    width: 40px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
     padding: 1%;
 
 }
+
 .textoss {
     display: flex;
     justify-content: center;
@@ -54,40 +59,34 @@ text-decoration: none;
 }
 .textoprincipal {
     display: table;
-    margin-top: auto;
-    margin-right: auto;
-    margin-left: auto;
-
+    margin: auto;
 }
-.menufooter ul {
-    list-style: none; 
 
-    li {
-        list-style: none;
-        justify-content: center;
+.menufooter ul {
+
         text-decoration: none; 
-        padding: 3%;
-        
-        &:hover {
-    color: rgb(147, 168, 236);
+        padding: 4%;
+            li {
+            list-style: none; 
+            &li:hover {
+        color: $color-terciario;
 }
 }
 }
 
 .footercolor {
-    background-color: rgba(21, 47, 73, 0.836);
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 5%;
+    background-color: $color-secundario;
 }
 p {
     display: flex;
     justify-content: center;
 }
 
-.subir {
-    width: 90px;
-    position: fixed;
-    bottom: 0px;
-    right: 15px;
-}
+
 .fotos1 {
     width: 75%;
     margin: auto;
@@ -118,6 +117,13 @@ img {
     img {
         max-width: 50%;
 }}
+@media screen and (min-width: 780px)   {
+    .fotos1 {
+        width: 75%;
+        margin: auto;}
+    img {
+        max-width: 75%;
+}}
 @media screen and (min-width: 3000px)   {
     .fotos1 {
         width: 60%;
@@ -132,11 +138,15 @@ img {
     img {
         max-width: 70%;
 }}
-.enlaces{
-    color: rgb(8, 7, 10);
+.enlaces ul{
+    list-style: none;
+    color: $color-enlaces;
+    :hover {
+        color: $color-primario;
+            }
 }
 .menuhamburguesa {
-    background-color: rgb(99, 129, 228);
+    background-color: $color-primario;
 }
 
 .beneficios {

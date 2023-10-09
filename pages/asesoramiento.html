@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/logoPersonaCorriendo1.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <!--etiqueta seo-->
 <meta name="description" content="Si te interesa el contenido de nuestra pagina, queres una guia mas personal para preparar tu proxima competencia o para iniciarte en el running">    
 <meta name="keywords" content="asesoramiento para entrenar, como entrenar,">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../css/style.css">
 <title>RUN | Asesoramiento</title>
 </head>
     <body id="arriba">
         <header class="header" >
-            <nav class= "navbar navbar-expand-lg bg-body-tertiary">
+            <nav class= "navbar navbar-expand-lg bg-body-tertiary navbar-dark" data-bs-theme="dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="../index.html">RUN</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +23,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a></li>
                         <li class="nav-item">
                             <a class="nav-link" href="nutricion.html">Nutricion</a></li>
                         <li class="nav-item">
@@ -31,7 +31,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="Carreras.html">Carreras</a></li>
                         <li class="nav-item">
-                            <a class="nav-link" href="asesoramiento.html">Asesoramiento</a></li>
+                            <a class="nav-link active" href="asesoramiento.html">Asesoramiento</a></li>
                     </ul>
                     </div>
                 </div>
@@ -40,10 +40,10 @@
         <section>
             <h1 class="container-fluid" id="asesoramiento"> Asesoramiento </h1>
             <img src="../img/personamirandoreloj.jpg" alt="personamirandoreloj" class="container">
-    <p class="container-fluid">En caso de que quieras un plan de entrenamiento personalizado
+    <main class="container-fluid">En caso de que quieras un plan de entrenamiento personalizado
     para tu proxima carrera, completa el formulario y a la brevedad te estaremos contactando.
     </p>
-            <H2 class="container-fluid">Contacto</H2>
+            <h2 class="container-fluid">Contacto</h2>
             <form class="container-fluid">
                 <div>
                     <label for="nombre">Nombre y Apellido</label>
@@ -59,11 +59,12 @@
                     
                 </div>
                 <div>
-                    <label for="edad">Años</label>
+                    <label for="edad" [Required]>Años</label>
                 <input type="number" name="" id="edad">
                 </div>
                 <div>
-                    <label for="coreo">Email</label>
+                    <label for="coreo" [Required]>Email</label>
+                    
                     <input type="email" name="" id="correo"> 
                 </div>
                 <div>
@@ -101,7 +102,6 @@
         </section>
         <section> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         </section>
-</body>
 <footer class="footercolor">
     <!--futuro menu de navegacion por paginas legales-->
     <p>  Todos los derechos reservados</p>
@@ -112,4 +112,5 @@
             <li><a href="legales.html">Cookies</a></li>
         </ul> 
 </footer>
+</body>
 </html>

@@ -1,6 +1,22 @@
+scale :hover {
+  transform: scale(2, 2);
+}
+
+body {
+  transition: all 3s;
+}
+
+p {
+  animation: 3s infinite alternate slidein;
+}
+
+ul {
+  animation: 3s infinite alternate slidein;
+}
+
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -17,23 +33,8 @@ body {
   margin: 0 auto;
 }
 
-li {
-  text-decoration: none;
-}
-li a:hover {
-  color: beige;
-}
-
 .clase1 {
   text-decoration: solid;
-}
-
-.header {
-  background-color: rgb(99, 129, 228);
-  padding: 18px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1;
 }
 
 .menuprincipal {
@@ -47,8 +48,10 @@ li a:hover {
 }
 
 .subir {
-  display: table;
-  margin-bottom: 15px;
+  width: 40px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
   padding: 1%;
 }
 
@@ -63,36 +66,31 @@ li a:hover {
 
 .textoprincipal {
   display: table;
-  margin-top: auto;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
 }
 
-.menufooter ul li {
-  display: inline;
+.menufooter ul {
   text-decoration: none;
-  list-style: none;
-  justify-content: center;
-  padding: 3%;
+  padding: 4%;
 }
-.menufooter ul li:hover {
-  color: aliceblue;
+.menufooter ul li {
+  list-style: none;
+}
+.menufooter ul lili:hover {
+  color: #e6e9f0;
 }
 
 .footercolor {
-  background-color: rgba(21, 47, 73, 0.836);
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 5%;
+  background-color: rgba(41, 42, 43, 0.836);
 }
 
 p {
   display: flex;
   justify-content: center;
-}
-
-.subir {
-  width: 40px;
-  position: fixed;
-  bottom: 0px;
-  right: 15px;
 }
 
 .fotos1 {
@@ -132,6 +130,15 @@ img {
     max-width: 50%;
   }
 }
+@media screen and (min-width: 780px) {
+  .fotos1 {
+    width: 75%;
+    margin: auto;
+  }
+  img {
+    max-width: 75%;
+  }
+}
 @media screen and (min-width: 3000px) {
   .fotos1 {
     width: 60%;
@@ -150,12 +157,16 @@ img {
     max-width: 70%;
   }
 }
-.enlaces {
-  color: rgb(8, 7, 10);
+.enlaces ul {
+  list-style: none;
+  color: rgb(109, 106, 116);
+}
+.enlaces ul :hover {
+  color: rgb(32, 33, 34);
 }
 
 .menuhamburguesa {
-  background-color: rgb(99, 129, 228);
+  background-color: rgb(32, 33, 34);
 }
 
 .beneficios {

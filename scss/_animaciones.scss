@@ -1,0 +1,15 @@
+scale {
+    :hover {
+        transform: scale(2, 2);
+    }
+}
+body{
+    transition: all 3s;
+}
+p {
+    animation: 3s infinite alternate slidein;
+    }
+ul 
+    {
+        animation: 3s infinite alternate slidein;
+}
